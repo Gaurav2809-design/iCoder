@@ -1,0 +1,83 @@
+/* Global Settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* No background on the body */
+  }
+  
+  /* Navbar Background */
+  .navbar {
+    background-color: #1c1c1c; /* Dark, sleek navbar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  }
+  
+  /* Logo Styling */
+  .navbar-brand {
+    font-size: 3rem; /* Clear, bold font size */
+    font-weight: bold;
+    color: white; /* Default white for clarity */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* 'i' Part of the Logo */
+  .navbar-brand span:first-child {
+    color: #00bcd4; /* Cyan for a cool, modern look */
+    font-weight: bold;
+  }
+  
+  /* 'Coder' Part with Blue-White Glow Effect */
+  .coder-text {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background: linear-gradient(90deg, #00bcd4, #ffffff); /* Blue to white gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    display: inline-block;
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.6), 0 0 20px rgba(0, 188, 212, 0.6), 0 0 40px rgba(0, 188, 212, 0.6); /* Soft neon glow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for 'Coder' - Intense Glow */
+  .coder-text:hover {
+    text-shadow: 0 0 20px rgba(0, 188, 212, 1), 0 0 30px rgba(0, 188, 212, 0.8), 0 0 50px rgba(0, 188, 212, 0.7); /* Intense glow on hover */
+    transform: scale(1.05); /* Smooth zoom effect */
+  }
+  
+  /* Hover Effect for Whole Logo */
+  .navbar-brand:hover {
+    color: #00bcd4; /* Cyan color on hover for whole logo */
+    transform: translateY(-3px); /* Lift effect with smooth transition */
+  }
+  
+  /* Navbar Links Styling */
+  .navbar-nav .nav-link {
+    color: #f8f9fa; /* Light color for navbar links */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Navbar Links Hover Effect */
+  .navbar-nav .nav-link:hover {
+    color: #ff6a00; /* Smooth orange color on hover */
+    text-decoration: underline;
+  }
+  
+  /* Active Navbar Link Styling */
+  .navbar-nav .nav-link.active {
+    color: #ff6a00; /* Active link color */
+    font-weight: bold;
+  }
+  
+  /* Mobile-Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 2.5rem; /* Adjust logo font size for mobile */
+    }
+  }
+  

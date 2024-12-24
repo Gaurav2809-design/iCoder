@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCoder Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                i<span class="coder-text">Coder</span>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+                            <li><a class="dropdown-item" href="/dev.html">Web development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/write.html">Write for Us </a></li>
+                            <li><a class="dropdown-item" href="/how .html">How to Write ?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Trigger for Modal (Contact Us link) -->
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
+                            Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Contact Us Form -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact Form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <!-- Page Header -->
+        <header class="text-center mb-5">
+            <h1 class="display-4">Learn Web Development: Roadmap & Information</h1>
+            <p class="lead">A comprehensive guide to mastering Web Development, from beginner to advanced topics!</p>
+        </header>
+
+        <!-- Web Development Information Section -->
+        <section class="mb-5">
+            <div class="h3 mb-4">What is Web Development?</div>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Web development is the process of building and maintaining websites. It
+                        involves tasks like designing, coding, and programming to create dynamic and interactive
+                        websites and web applications. There are two main categories of web development: **Front-End
+                        Development** and **Back-End Development**.</p>
+                    <p class="card-text"><strong>Front-End Development</strong> involves working with everything the
+                        user interacts with on a website. It includes HTML, CSS, JavaScript, and frameworks like React,
+                        Angular, and Vue.js.</p>
+                    <p class="card-text"><strong>Back-End Development</strong> focuses on the server, database, and
+                        application logic. It involves technologies such as Node.js, Python, Ruby, PHP, and databases
+                        like MySQL, PostgreSQL, and MongoDB.</p>
+                    <p class="card-text">Full-stack development involves mastering both front-end and back-end
+                        technologies to become proficient in creating complete web applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Development Roadmap Section -->
+        <section class="mb-5">
+            <div class="h3 mb-4">Web Development Learning Roadmap</div>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Roadmap for Mastering Web Development</h5>
+                    <p class="card-text">Follow this roadmap to learn web development in an organized and structured
+                        way. It covers all the key topics to help you become a proficient web developer!</p>
+
+                    <!-- Roadmap Steps -->
+                    <div class="accordion" id="webDevRoadmap">
+                        <!-- Step 1: HTML & CSS Basics -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. HTML & CSS Basics
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#webDevRoadmap">
+                                <div class="accordion-body">
+                                    Learn the basic building blocks of the web. Understand how to structure a webpage
+                                    using HTML (HyperText Markup Language) and style it with CSS (Cascading Style
+                                    Sheets). You'll create static websites by working with tags like "div", "header","footer", "article", and learn about layout techniques like Flexbox and Grid.
+                                </div>
+                            </div>
+
+                            <!-- Step 2: JavaScript Basics -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2. JavaScript Basics
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Learn the basics of JavaScript, the scripting language that brings websites to
+                                        life. You’ll learn how to manipulate the DOM (Document Object Model), handle
+                                        events like clicks and form submissions, and make websites interactive. You’ll
+                                        also learn about variables, functions, loops, and conditionals in JavaScript.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Version Control (Git & GitHub) -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        3. Version Control (Git & GitHub)
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Learn Git, a version control system that helps you track changes in your code,
+                                        collaborate with others, and manage multiple versions of a project. GitHub is a
+                                        popular platform that hosts your Git repositories and allows collaboration. This
+                                        step is essential for modern web development, especially when working on team
+                                        projects.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Responsive Web Design -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        4. Responsive Web Design
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Learn how to create websites that look great on all devices, from mobile phones
+                                        to desktop computers. Master media queries, flexible grid systems, and CSS
+                                        techniques to make your websites responsive. You'll also get familiar with
+                                        popular frameworks like Bootstrap to speed up your development process.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 5: Front-End Frameworks (React, Angular, Vue) -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        5. Front-End Frameworks (React, Angular, Vue)
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Once you're comfortable with HTML, CSS, and JavaScript, dive into popular
+                                        front-end frameworks like React, Angular, or Vue.js. These frameworks help build
+                                        dynamic, interactive web applications with reusable components and efficient
+                                        state management.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 6: Back-End Development (Node.js, Express) -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        6. Back-End Development (Node.js, Express)
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Learn back-end development using Node.js, a runtime that allows you to run
+                                        JavaScript on the server. You'll also explore Express.js, a minimal web
+                                        framework that simplifies building back-end services like APIs and managing HTTP
+                                        requests and responses.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 7: Databases (SQL & NoSQL) -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        7. Databases (SQL & NoSQL)
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Understand how databases work and learn to manage data. You'll work with both
+                                        SQL (Structured Query Language) databases like MySQL or PostgreSQL, and NoSQL
+                                        databases like MongoDB. Learn how to design databases, interact with them using
+                                        queries, and integrate them into your web applications.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 8: Deployment & DevOps -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        8. Deployment & DevOps
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEight" data-bs-parent="#webDevRoadmap">
+                                    <div class="accordion-body">
+                                        Learn how to deploy your web applications to the cloud using services like AWS,
+                                        Heroku, or DigitalOcean. Get familiar with DevOps practices that help you
+                                        automate workflows, manage infrastructure, and monitor application performance.
+                                        You'll also understand how Continuous Integration/Continuous Deployment (CI/CD)
+                                        pipelines work.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Progress Bar for Web Development Progress -->
+        <section class="mb-5">
+            <div class="h3 mb-4">Your Learning Progress</div>
+            <div class="progress" style="height: 30px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100">
+                    60% - Beginner to Intermediate
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <div class="bg-light p-5 text-center">
+            <h4>Start Your Web Development Journey Today!</h4>
+            <p>Continue learning by exploring tutorials, building projects, and practicing coding your first full-stack
+                web application.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn" class="btn btn-primary btn-lg"
+                target="_blank">Start Learning</a>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <!-- Newsletter Subscription -->
+            <p>Subscribe to our newsletter</p>
+            <form class="d-flex justify-content-center mb-4">
+                <input type="email" class="form-control w-25" placeholder="Enter your email" aria-label="Email">
+                <button class="btn btn-primary ms-2" type="submit">Subscribe</button>
+            </form>
+
+            <!-- Social Media Links -->
+            <div class="social-links mb-3">
+                <a href="https://twitter.com" class="text-white me-4">
+                    <i class="bi bi-twitter"></i> Twitter
+                </a>
+                <a href="https://facebook.com" class="text-white me-4">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://instagram.com" class="text-white me-4">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p>&copy; 2024 iCoder | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

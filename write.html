@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCoder Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                i<span class="coder-text">Coder</span>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+                            <li><a class="dropdown-item" href="/dev.html">Web development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/write.html">Write for Us </a></li>
+                            <li><a class="dropdown-item" href="/how .html">How to Write ?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Trigger for Modal (Contact Us link) -->
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
+                            Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Contact Us Form -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact Form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <header class="mb-5">
+            <h1 class="text-center">Write for Us at iCoder</h1>
+            <p class="text-center text-muted">Share your knowledge with a community of tech enthusiasts and developers.
+            </p>
+        </header>
+
+        <section>
+            <h2 class="h3">Why Write for iCoder?</h2>
+            <p>By writing for iCoder, you’ll:</p>
+            <ul>
+                <li><strong>Gain exposure</strong> to a large audience of tech enthusiasts and developers.</li>
+                <li><strong>Establish yourself</strong> as an authority in the tech community.</li>
+                <li><strong>Receive backlinks</strong> to your personal projects or social media profiles.</li>
+                <li><strong>Engage</strong> with a vibrant and passionate community of tech lovers.</li>
+            </ul>
+        </section>
+
+        <section class="my-5">
+            <h2 class="h3">What Kind of Articles Do We Accept?</h2>
+            <p>We’re always looking for high-quality content on a wide range of topics related to coding and technology.
+                Some examples include:</p>
+            <ul>
+                <li><strong>How-to guides</strong> on programming languages, frameworks, or development tools.</li>
+                <li><strong>In-depth product reviews</strong> of tech gadgets, coding tools, or software.</li>
+                <li><strong>Industry insights</strong> and tech news.</li>
+                <li><strong>Personal stories</strong> and experiences from developers.</li>
+                <li><strong>Opinions</strong> on current trends or future predictions in technology.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="h3">How to Submit Your Article</h2>
+            <p>If you’re interested in writing for iCoder, follow these steps:</p>
+            <ol>
+                <li><strong>Submit Your Pitch:</strong> Start by submitting a brief pitch for your article idea to <a
+                        href="mailto:[email]">[email]</a>.</li>
+                <li><strong>Full Article Submission:</strong> If your pitch is approved, you’ll be asked to submit the
+                    full article in a Word document or Google Docs format.</li>
+                <li><strong>Article Review:</strong> Our editorial team will review your submission and may ask for
+                    revisions.</li>
+                <li><strong>Publishing:</strong> Once the article is approved, it will be scheduled for publication on
+                    iCoder.</li>
+            </ol>
+        </section>
+
+        <section>
+            <p class="text-center mt-4">
+                <a href="/how .html" class="btn btn-primary">How to Write for Us</a>
+            </p>
+        </section>
+
+        <footer class="mt-5 text-center text-muted">
+            <p>Have questions? Reach out to us at <a href="mailto:[email]">iCoder01@gmail.com</a>.</p>
+        </footer>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <!-- Newsletter Subscription -->
+            <p>Subscribe to our newsletter</p>
+            <form class="d-flex justify-content-center mb-4">
+                <input type="email" class="form-control w-25" placeholder="Enter your email" aria-label="Email">
+                <button class="btn btn-primary ms-2" type="submit">Subscribe</button>
+            </form>
+
+            <!-- Social Media Links -->
+            <div class="social-links mb-3">
+                <a href="https://twitter.com" class="text-white me-4">
+                    <i class="bi bi-twitter"></i> Twitter
+                </a>
+                <a href="https://facebook.com" class="text-white me-4">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://instagram.com" class="text-white me-4">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p>&copy; 2024 iCoder | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
